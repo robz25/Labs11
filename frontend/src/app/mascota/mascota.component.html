@@ -1,0 +1,40 @@
+<div>
+    <h3>Mascoticas</h3>
+    <button class="btn btn-secondary" (click)="onInsert()">Nuevo</button>
+    <table class="table">
+        <thead class="table-dark">
+
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Peso</th>
+                <th>Acciones</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+
+            <!-- directiva ngFor -->
+
+
+            <tr *ngFor="let masco of mascota">
+
+                <td>{{masco.nombre}}</td>
+                <td>{{masco.edad}}</td>
+                <td>{{masco.peso}}</td>
+                <td>
+
+                    <button class="btn btn-success" (click)="onUpdate(masco._id)">Editar</button>
+                    <button class="btn btn-danger" (click)="onDelete(masco._id,masco.nombre)">Eliminar</button>
+
+                </td>
+                
+                
+            </tr>
+        </tbody>
+
+       
+    </table>
+</div>

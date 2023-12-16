@@ -1,0 +1,18 @@
+<div>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let art of datos">
+                <td>{{art.codigo}}</td>
+                <td>{{art.descripcion}}</td>
+                <td>{{art.precio}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

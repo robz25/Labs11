@@ -1,0 +1,52 @@
+<div class="container">
+
+    <h3>Agregar Mascota</h3>
+    <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    
+
+        <div class="mb-3 row">
+            <label for="nombre" class="col-sm-2 col-form-label">Nombre de mascota</label>
+            <div class="col-sm-10">
+                <input 
+                type="text" 
+                class="form-control" 
+                id="nombre" 
+                name="nombre"
+                formControlName="nombre">
+            </div>
+           </div>
+    
+    
+           <div class="mb-3 row">
+            <label for="edad" class="col-sm-2 col-form-label">Cual es la edad?</label>
+            <div class="col-sm-10">
+                <input 
+                type="text" 
+                class="form-control" 
+                id="edad" 
+                name="edad"
+                formControlName="edad">
+            </div>
+           </div>
+    
+    
+           <div class="mb-3 row">
+            <label for="peso" class="col-sm-2 col-form-label">Peso</label>
+            <div class="col-sm-10">
+                <input 
+                type="text" 
+                class="form-control" 
+                id="peso" 
+                name="peso"
+                formControlName="peso">
+            </div>
+           </div>
+    
+           <div class="mb-3 row">
+    
+            <button type="submit" class="btn btn-primary">Aceptar</button>
+           </div>
+
+       
+    </form>
+</div>
